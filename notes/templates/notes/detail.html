@@ -3,6 +3,7 @@
 
 {% block content %}
     <a href="{% url 'note_edit' note.id %}" class="btn btn-warning">✏️ Редактировать</a>
+    <a href="{% url 'note_delete' note.id %}" class="btn btn-danger ms-2">🗑️ Удалить</a>
     <div class="card">
         <div class="card-body">
             <h3 class="card-title">{{ note.title }}</h3>
